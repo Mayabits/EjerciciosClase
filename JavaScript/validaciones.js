@@ -7,7 +7,7 @@ Validaciones
 4. Valida el formulario, haciendo que el nombre tenga al menos 2 caracteres y sea requerido, el email sea valido y coincida en ambos campos, la contraseña tenga al menos 8 caracteres y coincidan y haya aceptado las condiciones del servicio.
 (validador equalTo())
 */
-function init();
+function init(){
     console.log("DOM Cargado Jquery");
     $("#login").validate({
         rules: {
@@ -17,8 +17,9 @@ function init();
         messages: {
             name: "Por favor intrduzca un nombre", 
             password: "Por favor introduzca su contraseña"
-        },
-    }                     
+        }
+        })
+    }
 $(document).ready(init);
 
     //Revisar la documentación del plugin para más datos https://jqueryvalidation.org/documentation/
