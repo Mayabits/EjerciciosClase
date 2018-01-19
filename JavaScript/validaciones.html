@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Ejercicios validaciones jQuery
+        </title>
+        <script src="jQuery/jquery-3.2.1.js"></script>
+           <script src="validaciones.js"></script>
+    </head>
+    <body>
+        <form id="login" action="ejvalidaciones.php" method="post">
+               <div>
+                   <label for="username">Usuario</label>
+                   <input type="text" name="usuario" id="username" value="" required placeholder="Nombre de usuario"/>
+                   <label id="username-error" for="username" class="error"></label>
+                   <br>
+              </div>
+              <div>
+                     <label for="pwd">Contraseña</label>
+                <input type="password" name="pwd" id="pwd" value="" required placeholder="Contraseña errónea"
+                <label id="pwd-error" for="pwd"  class="error"></label>
+              </div>
+                <br>
+                <input type="submit" name="entrar"><br>
+            </form>
+    </body>
+</html>
+
+
+    

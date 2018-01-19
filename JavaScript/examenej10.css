@@ -1,0 +1,14 @@
+.father{
+    position:relative;
+    display:inline-block;
+    width:500px;
+    height: 400px;
+}
+span{
+    float:left;
+    width:30px;
+    height: 30px;
+    background-image: url(imgs/a.jpg);
+    overflow: hidden;
+    
+}
