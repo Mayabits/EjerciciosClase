@@ -1,3 +1,10 @@
+<!--
+1. Coge el resultado del ejercicio 2 y maqueta el formulario de la barra superior. Para que tenga un aspecto de fomrulario inline boostrap pero que el icono de búsqueda vaya dentro del campo. Dentro del campo deberá aparecer cuando no esté rellenado el texto "Buscar".
+2. Dentro del div de contenido introduce el típico formulario de login. Maquétalo con Bootstrap.
+3. Crea una nueva página que sea copia de la anterior y llámala registro. Quita el contenido completo central de la página y pon el típico formulario de registro: nombre e usuario, contraseña dos veces, email, nombre apellidos, etc... y el botón de enviar el formulario. 
+4. Integra un plugin de Jquery de validación de formularios sobre estos dos últimos formularios. Mira a ver si puedes hacer que el plugin de validación use por defecto las clases de error y validación de bootstrap.
+ 
+-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
@@ -13,10 +20,7 @@
 </head>
 
 <body>
-<!-- 
-Intenta transformar el código que se muestra de ejemplo en este ejercicio, para mantenieniendo las proporciones de los cajas del original, pero usando bootstrap para posionar el contenido en: contenedor, rows y columnas.
--->
-<!-- Contenedor -->
+
 <div class="container contenedor">
 
 	<!-- Cabecera -->
@@ -26,18 +30,22 @@ Intenta transformar el código que se muestra de ejemplo en este ejercicio, para
 		</div>
 
 		<div class="col-md-3">
-			<form action="#" method="post">
-				Buscar &nbsp; <input name="busqueda" type="text" />
+             <div class="input-group">
+			<form action="#" method="post" class="inline">
+                <input input type="text" class="form-control" placeholder="Search"/>Buscar &nbsp;
+                <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
 			</form>
 		</div>
-		
 		<div class="clear"></div>
+        </div>
 	
 	<!-- /Cabecera 
 1. Coge el resultado del ejercicio 2 y maqueta el formulario de la barra superior. Para que tenga un aspecto de fomrulario inline boostrap pero que el icono de búsqueda vaya dentro del campo. Dentro del campo deberá aparecer cuando no esté rellenado el texto "Buscar".-->
 	
 	<!-- Menu principal -->
-	<div class="menu class="form-group>
+	<div class="menu">
 		<ul class="menu_principal">
 			<li><a href="#">Lorem</a></li>
 			<li><a href="#">Ipsum</a></li>
@@ -48,7 +56,7 @@ Intenta transformar el código que se muestra de ejemplo en este ejercicio, para
 		<div class="clear"></div>
 	</div>
 	
-
+ </div>
 	<!-- Lateral -->
     
 		<!-- Noticias -->
@@ -134,7 +142,7 @@ Intenta transformar el código que se muestra de ejemplo en este ejercicio, para
          </div>
 	<!-- /Secundario -->
         </div>   
-    </div>
+   
 	<!-- /Contenido -->
     <!-- Pie -->
 	<div class="pie row">
@@ -156,8 +164,10 @@ Intenta transformar el código que se muestra de ejemplo en este ejercicio, para
             </div>
 		<!-- /Pie -->
 </div>
-     </div>
     </div>
-<!-- /Contenedor -->
 </body>
 </html>
+
+
+
+
