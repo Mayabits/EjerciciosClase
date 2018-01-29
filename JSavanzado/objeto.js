@@ -34,6 +34,12 @@ var Cliente={
     email:"mirasam@gmail.com",
     ctlf:639542178,
     persona_contacto:"Tarik",
+    Setnombre:function(n){
+        this.nombre=n},
+    toString: function (){
+        return "nombre: "+this.nombre+", dirección: "+this.direccion_fisica+", email: "+this.email+", persona de contacto: "+this.persona_contacto+".";
+        
+    }
 };
 
 /* 3.- Crea otro objeto con el nombre segundoCliente con las mismas propiedades pero con distintos valores.
@@ -45,6 +51,11 @@ var segundoCliente={
     email:"lalorethebest@gmail.com",
     ctlf:678954373,
     persona_contacto:"Carmen",
+    Setemail:function(e){
+        this.email=e},
+    toString: function (){
+        return "nombre: "+this.nombre+", dirección: "+this.direccion_fisica+", email: "+this.email+", persona de contacto: "+this.persona_contacto+".";
+    }
 };
 //4.- Imprime por pantalla el nombre del primer objeto
 
@@ -54,7 +65,54 @@ console.log(Cliente.nombre)
 
 console.log(segundoCliente.email)
 
+//6.- Cambia el nombre del primero objeto por el valor "Maderas Peralta"
+
+Cliente.Setnombre("Maderas Peralta");
+
+//7.- Imprime el valor del nombre del primer objeto
+
+console.log(Cliente.nombre)
+
+//8.- Cambia el email del segundo objeto por el valor "info@micasuci.com"
+
+segundoCliente.Setemail("info@micasuci.com");
+
+//9.- Imprime el email por pantalla del segundo objeto
+
+console.log(segundoCliente.email)
+
 /* 
-6.- Cambia el nombre del primero objeto por el valor "Maderas Peralta"
-7.- Imprime el valor del nombre del primer objeto
+10.- Añade al primer objeto un método (función) llamado toString, dicho método no recibe parámetros de entrada y devuelve una cadena de caracteres con los datos de las propiedades de ese objeto, indicando el nombre del objeto el nombre de cada propiedad y el valor asociado a cada propiedad
+-he añadido lo siguiente a la respuesta del 2:
+toString: function (){
+        return "nombre: "+this.nombre_del_cliente+", dirección: "+this.direccion_fiscia+", email: "+this.email+", persona de contacto: "+this.persona_contacto+".";
+    }
 */
+//11.Imprime por pantalla el valor devuelto por el método toString del primer objeto
+
+console.log(Cliente.toString())
+
+//12.- Añade un método toString similar en el segundo objeto
+/*-he añadido esto al punto 3: 
+toString: function (){
+        return "nombre: "+this.nombre+", dirección: "+this.direccion_fisica+", email: "+this.email+", persona de contacto: "+this.persona_contacto+".";
+    }
+*/
+//13.Imprime por pantalla el valor devuelvo por el método toString del segundo objeto
+console.log(segundoCliente.toString)
+
+/*
+14.- Añade un método setter y otro getter al primero objeto por cada propiedad definida en él, sin contar los métodos. 
+15.- Utiliza todos los métodos definidos en el primer objeto dentro de tu código JS
+16.- Introduce una nueva propiedad en el objeto cliente (1º) llamada facturacion, su valor inicial será un array de 2 posiciones con dos elementos de tipo numérico 4 y 25
+17.- Imprime por pantalla el valor de la primera posición del array almacenado en la propiedad facturacion del primer objeto
+*/
+
+
+
+
+
+
+
+
+
