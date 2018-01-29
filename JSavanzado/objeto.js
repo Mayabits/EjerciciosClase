@@ -32,16 +32,47 @@ var Cliente={
     nombre:"Samira",
     direccion_fisica:"Avda.Peñagrande,122",
     email:"mirasam@gmail.com",
-    ctlf:639542178,
+    tlf:639542178,
     persona_contacto:"Tarik",
     Setnombre:function(n){
         this.nombre=n},
     toString: function (){
-        return "nombre: "+this.nombre+", dirección: "+this.direccion_fisica+", email: "+this.email+", persona de contacto: "+this.persona_contacto+".";
-        
+        return "nombre:"+this.nombre+", dirección: "+this.direccion_fisica+", email: "+this.email+", persona de contacto: "+this.persona_contacto+".";
+    }, 
+        setNombre: function (n) {
+        this.nombre=n;
+   
+        },
+        getNombre: function(){
+        return this.nombre;
+        },
+        setDireccion:function(c) {
+        this.direccion_fisica=c;
+        },
+        getDireccion: function(){
+        return this.direccion_fisica;
+        },
+        setEmail: function (e) {
+        this.email=e;
+        },
+        getEmail: function(){
+        return this.email;
+        },
+        setTel: function (t) {
+        this.tlf=t;
+        },
+        getTel: function(){
+        return this.tlf;
+        },
+        setContacto: function (c) {
+        this.persona_contacto=c;
+        },
+        getContacto: function(){
+        return this.persona_contacto;
+        },
     }
-};
 
+    
 /* 3.- Crea otro objeto con el nombre segundoCliente con las mismas propiedades pero con distintos valores.
 */
 
@@ -101,9 +132,14 @@ toString: function (){
 //13.Imprime por pantalla el valor devuelvo por el método toString del segundo objeto
 console.log(segundoCliente.toString)
 
+/*14.- Añade un método setter y otro getter al primer objeto por cada propiedad definida en él, sin contar los métodos. 
+-ver ej.2 */
+
+//15.- Utiliza todos los métodos definidos en el primer objeto dentro de tu código JS
+
+
+
 /*
-14.- Añade un método setter y otro getter al primero objeto por cada propiedad definida en él, sin contar los métodos. 
-15.- Utiliza todos los métodos definidos en el primer objeto dentro de tu código JS
 16.- Introduce una nueva propiedad en el objeto cliente (1º) llamada facturacion, su valor inicial será un array de 2 posiciones con dos elementos de tipo numérico 4 y 25
 17.- Imprime por pantalla el valor de la primera posición del array almacenado en la propiedad facturacion del primer objeto
 */
