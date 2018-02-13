@@ -44,12 +44,34 @@ function nomostrar(enlace1){
      enlace1.preventDefault();
      $("#firstp").toggleClass("ocultar");
     //.toggleClass añade u oculta una clase en el id que he puesto
-     $("#secondp").toggleClass("ocultar");
-}
+    if ($("#firstp").hasClass("ocultar")){
+     $("#firstlink").html("Mostrar contenidos")}
+        //si existe la clase ocultar dentro de #firstp {modifica el html de "link1" por ("ese texto")}
+    else {$("#firstlink").html("Ocultar contenidos")};
+};
+function hide2(enlace2){
+    enlace2.preventDefault();
+    $("#secondp").toggleClass("ocultar");
+     if ($("#secondp").hasClass("ocultar")){
+     $("#link2").html("Mostrar contenidos")}
+        //si existe la clase ocultar dentro de #firstp {modifica el html de "link1" por ("ese texto")}
+    else {$("#link2").html("Ocultar contenidos")};
+};
+function hide3(enlace3){
+    enlace3.preventDefault();
+    $("#thirdp").toggleClass("ocultar");
+     if ($("#thirdp").hasClass("ocultar")){
+     $("#link3").html("Mostrar contenidos")}
+        //si existe la clase ocultar dentro de #firstp {modifica el html de "link1" por ("ese texto")}
+    else {$("#link3").html("Ocultar contenidos")};
+};
 function init(){
    console.log("DOM Cargado");   
    $("#firstlink").click(nomostrar);
     $("#firstlink").click();
-    $("#link2").click(nomostrar);
-};
+     $("#link2").click(hide2);
+    $("#link2").click();
+     $("#link3").click(hide3);
+    $("#link3").click();
+    };
 document.addEventListener("DOMContentLoaded",init);
