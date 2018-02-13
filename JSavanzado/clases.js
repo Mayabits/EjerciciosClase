@@ -40,7 +40,7 @@ var miburra=new Moto();
 console.log(miburra);
 
 miburra.matricula="SA1234H";
-console.log(miburra);
+console.log(miburra.matricula);
 
 var motoraton=new Moto();
 console.log(motoraton);

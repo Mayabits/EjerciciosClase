@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=”es”>  
+	<head>
+    	<meta charset="utf-8"/>
+    	<title>
+         	Marian Patilla
+    	</title>
+        <script src="jQuery/jquery-3.2.1.js"></script>
+		<script src="tipoexam.js"></script>
+	</head>
+	<body>
+         <form>
+             <div>
+                <input type="text" id="texto"/>
+             </div>
+             <div>
+                    <ul id="sugerencias">
+                    </ul>
+            </div>
+        </form>
+	</body>
+</html>
+
+<!--
+  $.onkeyup(criterio,function(persona){
+    $("#texto").val});
+    console.log(criterio);
+
+
+____
+function init(){   
+    $("#busqueda").keyup(function almacena(){
+        var texto_a_buscar=$("#busqueda").val();
+        console.log(texto_a_buscar);
+    
+    });
+ }
+$(document).ready(init);
+Con js
+function init(){   
+ console.log("DOM cargado");
+    var busqueda=document.getElementById("busqueda");
+    busqueda.addEventListener("keyup",function almacena(busqueda){
+        var texto_a_buscar=busqueda.value;
+        console.log(texto_a_buscar);
+    });
+ }
+document.addEventListener("DOMContentLoaded",init);
+
+
+
+________
+Petición get: Quiero descargar algun tipo de información de un servidor.  Habitualmente te descargas ficheros parciales (progressive web apps, se descarga progresivamente según vas usandola, no se carga todo el DOM de golpe(se reduce el tráfico, la carga es mas rápida)) de html, js.
+Ejemplo:
+function presentaDatos(“codigoHTML”){
+                console.log("success");
+                $("#resultados").html(codigoHTML);
+    
+}
+function peticionGet() {
+    $.get("ajax-parcial.html", (éxito, ejecuta correctamente la función descrita arriba como segundo parámetro)presentaDatos)
+        .done(function () {
+            console.log("second success");
+        })                (XML http request)
+        .fail(function (jqXHR, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqXHR.responseText);
+        console.log("error " + errorThrown);
+        })
+        .always(function () {
+            console.log("finished");
+        });
+}
+-->
